@@ -37,7 +37,7 @@ public class KosmosNoticeController {
 	
 	// ******************************************************************** /
 	// 공지사항 글쓰기 폼 출력
-  @GetMapping("noticeForm")
+	@GetMapping("noticeForm")
 	public String noticeForm(KosmosNoticeVO nvo) {
 		logger.info("noticeForm() 호출");
 		return "notice/noticeForm";
@@ -47,7 +47,7 @@ public class KosmosNoticeController {
 	
 	// ******************************************************************** /
 	// 공지사항 목록 조회
-  @GetMapping("noticeList")
+	@GetMapping("noticeList")
 	public String noticeList(KosmosNoticeVO nvo, Model model) throws Exception {
 		logger.info("noticeList() 호출");
 		
